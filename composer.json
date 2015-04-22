@@ -1,27 +1,17 @@
 {
-    "name": "panique/php-login",
+    "name": "panique/huge",
     "type": "project",
-    "description": "A PHP login system embedded in a simple MVC framework",
-    "keywords": ["login", "auth", "user", "authentication", "mvc"],
-    "homepage": "https://github.com/panique/php-login",
+    "description": "A full-feature user authentication / login system embedded into a simple but powerful MVC framework structure",
+    "keywords": ["login", "auth", "user", "authentication", "mvc", "membership"],
+    "homepage": "https://github.com/panique/huge",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Panique",
-            "homepage": "http://careers.stackoverflow.com/panique",
-            "role": "Developer"
-        }
-    ],
-    "support": {
-        "issues": "https://github.com/panique/php-login/issues",
-        "source": "https://github.com/panique/php-login"
+    "require-dev": {
+        "php": ">=5.5.0",
+        "phpmailer/phpmailer": "~5.2",
+        "gregwar/captcha": "~1.0.12",
+        "phpunit/phpunit": "~4.5"
     },
-    "require":{
-        "php": ">=5.3.7",
-        "ircmaxell/password-compat": "~1.0.3",
-        "phpmailer/phpmailer": "~5.2.7",
-        "gregwar/captcha": "~1.0.11",
-        "facebook/php-sdk": "~3.2.3",
-        "raveren/kint": "~1.0@dev"
+    "autoload": {
+        "psr-4": { "": ["application/core/", "application/model/"] }
     }
 }
